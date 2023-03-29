@@ -1,3 +1,9 @@
+import { Navbar } from "@/components";
+
 export const HomeTemplate = () => {
-  return <h1>oi</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };

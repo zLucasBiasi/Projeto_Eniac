@@ -1,3 +1,5 @@
+import { HomeTemplate } from "@/templates/Home";
+
 export default function Home() {
   return (
     <>
@@ -9,6 +11,7 @@ export default function Home() {
           response={item.response}
         />
       ))} */}
+      <HomeTemplate />
     </>
   );
 }
