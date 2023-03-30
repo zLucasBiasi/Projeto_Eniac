@@ -1,4 +1,4 @@
-import { ButtonProps } from "./type";
+import { ButtonProps } from "./types";
 
 import * as S from "./styles";
 

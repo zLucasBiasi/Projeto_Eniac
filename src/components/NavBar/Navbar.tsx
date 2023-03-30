@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { Container } from "@/styles/global";
+
 import Hamburguer from "/public/assets/images/hamburguer.svg";
+import Logo from "/public/assets/images/logo.png";
 
 import { ListIcons, listNav } from "./listNav";
 
@@ -13,7 +14,9 @@ export const Navbar = () => {
     <S.Header>
       <Container>
         <S.Navbar>
-          <S.Logo>LOGO</S.Logo>
+          <S.LogoContainer>
+            <S.Logo src={Logo} alt="Logo da empresa" />
+          </S.LogoContainer>
           <S.Wrapper>
             {listNav?.map((item, key) => (
               <ul key={key}>
@@ -29,21 +32,18 @@ export const Navbar = () => {
           <S.Wrapper>
             {ListIcons?.map((item, key) => (
               <ul key={key}>
-                <S.Items>
-                  {item.link ? (
-                    <Link href={item.link}>
-                      <Image src={item.icon} alt={item.alt} />
-                    </Link>
-                  ) : (
-                    <Image
-                      src={item.icon}
-                      alt={item.alt}
-                      onClick={item.onclick}
-                    />
-                  )}
-                </S.Items>
+                <li>
+                  <Image
+                    src={item.icon}
+                    alt={item.alt}
+                    onClick={item.onclick}
+                  />
+                </li>
               </ul>
             ))}
+            {/* <S.CallLink href="https://wa.me" target="_blank" rel="noreferrer">
+              (11) 4804-5032
+            </S.CallLink> */}
           </S.Wrapper>
           <S.MobileNav>
             <Image src={Hamburguer} alt="icone de hamburguer para o menu" />

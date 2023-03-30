@@ -1,18 +1,28 @@
+import Image from "next/image";
 import Link from "next/link";
 import styled, { css } from "styled-components";
 
 export const Header = styled.header`
   ${({ theme }) => css`
     width: 100%;
-    height: 8rem;
+    height: 10rem;
     background-color: ${theme.colors.background};
     display: flex;
     align-items: center;
   `}
 `;
 
-export const Logo = styled.h1`
+export const LogoContainer = styled.div`
   margin-right: 4rem;
+`;
+
+export const Logo = styled(Image)`
+  width: 8rem;
+  height: 8rem;
+  @media (max-width: 800px) {
+    width: 6rem;
+    height: 6rem;
+  }
 `;
 
 export const Navbar = styled.nav`
@@ -50,5 +60,14 @@ export const LinkStyle = styled(Link)`
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.4rem;
+  `}
+`;
+
+export const CallLink = styled.a`
+  ${({ theme }) => css`
+    padding: 1rem 2rem;
+    background-color: ${theme.colors.green};
+    color: white;
+    border-radius: 0.6rem;
   `}
 `;
