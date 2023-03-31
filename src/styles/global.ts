@@ -30,4 +30,7 @@ export const Container = styled.div`
   padding: 0 3rem;
   margin: 0 auto;
   width: 100%;
+  @media (max-width: 800px) {
+    padding: 0 1rem;
+  }
 `;

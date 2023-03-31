@@ -4,7 +4,7 @@ import Cart from "/public/assets/images/iconCart.svg";
 export const listNav = [
   {
     category: "Inicio",
-    link: "/Inicio",
+    link: "/",
   },
   {
     category: "Produtos",
@@ -16,7 +16,7 @@ export const listNav = [
   },
   {
     category: "Contatos",
-    link: "/Contatos",
+    link: "/contatos",
   },
 ];
 

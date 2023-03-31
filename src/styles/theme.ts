@@ -9,6 +9,11 @@ const theme = {
     grayFaq: "#050505b0",
     grayBorderFaq: "rgba(0, 0, 0, 0.45)",
     green: "#499C98",
+    purple: "#32264D",
+    gray_input: "#4E4958",
+    ligth_gray: "#C1BCCC",
+    cian_input: "#42D3FF",
+    backLines: "#E6E6F0",
   },
 };
 
