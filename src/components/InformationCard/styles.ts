@@ -12,15 +12,19 @@ export const ContainerCards = styled.div`
 export const Card = styled.div`
   ${({ theme }) => css`
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     padding: 0 2rem;
-    width: 32rem;
     height: 12rem;
+    width: 100%;
     background: ${theme.colors.white};
     box-shadow: 0.1rem 0.1rem 0.6rem ${theme.colors.boxShadow};
     border-radius: 0.4rem;
+
+    @media (min-width: 800px) {
+      width: 32rem;
+      justify-content: center;
+      align-items: center;
+    }
   `}
 `;
 
