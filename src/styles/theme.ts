@@ -3,6 +3,7 @@ const theme = {
     background: "#",
     black: "#000",
     white: "#fff",
+    red: "#c60000",
     cian: "#00C2FF",
     boxShadow: "rgba(0, 0, 0, 0.1)",
     gray: "#f0f0f0",

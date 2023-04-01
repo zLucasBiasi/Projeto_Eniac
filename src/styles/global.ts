@@ -1,6 +1,17 @@
 import styled, { createGlobalStyle } from "styled-components";
+import theme from "./theme";
 
 export const GlobalStyles = createGlobalStyle`
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+    background: ${theme.colors.background};
+    }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${theme.colors.red};
+    border-radius: 50px;
+    }
+
   * {
     margin: 0;
     padding: 0;
