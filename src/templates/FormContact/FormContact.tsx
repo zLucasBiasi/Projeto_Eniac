@@ -12,9 +12,6 @@ export const FormTemplate = () => {
   return (
     <>
       <Container>
-        <Title>
-          <S.LinkHome href="/">Voltar ao inicio</S.LinkHome>
-        </Title>
         <Form>
           <Title>Contato</Title>
           <Input type="text" label="Nome" rule="nome completo" />

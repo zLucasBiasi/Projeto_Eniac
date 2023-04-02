@@ -1,15 +1,8 @@
-import {
-  Banner,
-  InformationCard,
-  Navbar,
-  Title,
-  ProductsCard,
-} from "@/components";
+import { Banner, InformationCard, Title, ProductsCard } from "@/components";
 
 export const HomeTemplate = () => {
   return (
     <>
-      <Navbar />
       <Banner />
       <InformationCard />
       <Title>Produtos</Title>

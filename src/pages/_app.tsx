@@ -5,7 +5,7 @@ import { Poppins } from "@next/font/google";
 import { ThemeProvider } from "styled-components";
 import theme from "@/styles/theme";
 import { GlobalStyles } from "@/styles/global";
-import { ButtonTop } from "@/components/ButtonTop";
+import { Navbar, ButtonTop } from "@/components";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <main className={poppins.className}>
+        <Navbar />
         <Component {...pageProps} />
         <GlobalStyles />
         <ButtonTop />

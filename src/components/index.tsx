@@ -5,3 +5,4 @@ export { FAQ } from "./FAQ";
 export { InformationCard } from "./InformationCard";
 export { Title } from "./Title";
 export { ProductsCard } from "./productsCard";
+export { ButtonTop } from "./ButtonTop";
