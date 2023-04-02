@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
   flex-wrap: wrap;
   align-items: center;
   gap: 6rem;
-
+  margin-bottom: 10rem;
   @media (max-width: 800px) {
     justify-content: center;
   }

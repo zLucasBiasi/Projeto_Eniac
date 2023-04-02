@@ -12,7 +12,7 @@ export const listNav = [
   },
   {
     category: "Empresa",
-    link: "/Empresa",
+    link: "/empresa",
   },
   {
     category: "Contatos",
