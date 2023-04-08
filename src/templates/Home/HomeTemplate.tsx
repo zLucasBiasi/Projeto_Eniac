@@ -1,4 +1,9 @@
-import { Banner, InformationCard, Title, ProductsCard } from "@/components";
+import {
+  Banner,
+  InformationCard,
+  Title,
+  CategoryProductsCard,
+} from "@/components";
 
 export const HomeTemplate = () => {
   return (
@@ -6,7 +11,7 @@ export const HomeTemplate = () => {
       <Banner />
       <InformationCard />
       <Title>Produtos</Title>
-      <ProductsCard />
+      <CategoryProductsCard />
     </>
   );
 };

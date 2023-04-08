@@ -6,7 +6,7 @@ import { Container } from "@/styles/global";
 
 import * as S from "./styles";
 
-export const ProductsCard = () => {
+export const CategoryProductsCard = () => {
   return (
     <>
       <Container>

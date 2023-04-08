@@ -8,6 +8,7 @@ import Logo from "/public/assets/images/logo.png";
 import { ListIcons, listNav } from "./listNav";
 
 import * as S from "./styles";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -15,7 +16,9 @@ export const Navbar = () => {
       <Container>
         <S.Navbar>
           <S.LogoContainer>
-            <S.Logo src={Logo} alt="Logo da empresa" />
+            <Link href="/">
+              <S.Logo src={Logo} alt="Logo da empresa" />
+            </Link>
           </S.LogoContainer>
           <S.Wrapper>
             {listNav?.map((item, key) => (

@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <GlobalStyles />
         <ButtonTop />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </ThemeProvider>
   );
