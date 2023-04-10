@@ -15,7 +15,8 @@ export const Wrapper = styled.section`
 
 export const Name = styled.span`
   ${({ theme }) => css`
-    font-size: 2rem;
+    width: 100%;
+    font-size: 1.6rem;
     font-weight: 600;
     color: ${theme.colors.purple};
   `}

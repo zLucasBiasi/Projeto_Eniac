@@ -73,7 +73,7 @@ export const products = [
   },
   {
     id: "8",
-    name: "Bolo de Amêndoas com Cobertura de Açúcar de Confeiteiro",
+    name: "Bolo de Amêndoas ",
     image: Product,
     alt: "Imagem de um bolo",
     href: "/produtos/produto8",
