@@ -16,10 +16,12 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   }
 
   body {
     font-size: 1.6rem;
+    overflow-x: hidden;
   }
 
   ul {

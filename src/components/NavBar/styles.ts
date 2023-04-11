@@ -25,6 +25,33 @@ export const Logo = styled(Image)`
   }
 `;
 
+export const MenuMobile = styled.div`
+  ${({ theme, active }: { active: boolean }) => css`
+    opacity: ${active ? "1" : "0"};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-radius: 0.4rem;
+    background: ${theme.colors.red};
+    box-shadow: 0.1rem -0.1rem 1rem -0.1rem ${theme.colors.gray_input};
+    width: 80%;
+    height: 30rem;
+    z-index: 2;
+    position: absolute;
+    top: 8rem;
+    right: 1.5rem;
+    transition: 0.3s ease;
+  `}
+`;
+export const Flex = styled.div`
+  display: flex;
+  gap: 2rem;
+  filter: invert();
+  cursor: pointer;
+`;
+
 export const Navbar = styled.nav`
   width: 100%;
   display: flex;
@@ -56,18 +83,11 @@ export const Items = styled.li`
 export const LinkStyle = styled(Link)`
   ${({ theme }) => css`
     color: ${theme.colors.black};
-
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.4rem;
-  `}
-`;
-
-export const CallLink = styled.a`
-  ${({ theme }) => css`
-    padding: 1rem 2rem;
-    background-color: ${theme.colors.green};
-    color: white;
-    border-radius: 0.6rem;
+    @media (max-width: 800px) {
+      color: ${theme.colors.white};
+    }
   `}
 `;
