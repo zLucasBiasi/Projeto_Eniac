@@ -12,7 +12,7 @@ export const InformationCard = () => {
         {Informations.map((item, key) => (
           <S.Card key={key}>
             <Image src={item.logo} alt={item.alt} />
-            <S.Text dangerouslySetInnerHTML={{ __html: item.text }} />
+            <S.Text>{item.text}</S.Text>
           </S.Card>
         ))}
       </S.ContainerCards>

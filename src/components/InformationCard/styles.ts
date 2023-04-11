@@ -12,8 +12,10 @@ export const ContainerCards = styled.div`
 export const Card = styled.div`
   ${({ theme }) => css`
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    padding: 0 2rem;
+    padding: 0 4rem;
     height: 12rem;
     width: 100%;
     background: ${theme.colors.white};
@@ -22,8 +24,6 @@ export const Card = styled.div`
 
     @media (min-width: 800px) {
       width: 32rem;
-      justify-content: center;
-      align-items: center;
     }
   `}
 `;
@@ -32,4 +32,7 @@ export const Text = styled.span`
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.8rem;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
