@@ -6,7 +6,7 @@ import { Form, Input, Select, Textarea, Title } from "./components";
 
 import * as S from "./styles";
 
-export const FormTemplate = () => {
+export const Contact = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
   return (

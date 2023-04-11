@@ -1,11 +1,5 @@
-import { ProductsTemplate } from "@/templates/ProductsTemplate/ProductsTemplate";
+import { Products } from "@/templates/Products/Products";
 
-const produtos = () => {
-  return (
-    <>
-      <ProductsTemplate />
-    </>
-  );
-};
+const ProductsPage = () => <Products />;
 
-export default produtos;
+export default ProductsPage;

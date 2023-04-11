@@ -1,13 +1,5 @@
-import { Title } from "@/components";
-import CompanyTemplate from "@/templates/CompanyTemplate/Company";
+import { Company } from "@/templates/Company/Company";
 
-const empresa = () => {
-  return (
-    <>
-      <Title>CONHEÇA A SOLRAC</Title>
-      <CompanyTemplate />
-    </>
-  );
-};
+const CompanyPage = () => <Company />;
 
-export default empresa;
+export default CompanyPage;

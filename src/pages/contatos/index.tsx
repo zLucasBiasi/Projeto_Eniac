@@ -1,11 +1,5 @@
-import { FormTemplate } from "@/templates/FormContact/FormContact";
+import { Contact } from "@/templates/Contact/Contact";
 
-const contatos = () => {
-  return (
-    <>
-      <FormTemplate />
-    </>
-  );
-};
+const ContactPage = () => <Contact />;
 
-export default contatos;
+export default ContactPage;

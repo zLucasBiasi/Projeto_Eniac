@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { products } from "../../templates/ProductsTemplate/components/ProductsCard/products";
+import { products } from "../../templates/Products/components/ProductsCard/products";
 
 import { Container } from "@/styles/global";
 

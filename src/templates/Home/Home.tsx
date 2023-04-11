@@ -1,6 +1,6 @@
 import { Banner, InformationCard, Title, BestSellers } from "@/components";
 
-export const HomeTemplate = () => {
+export const HomePage = () => {
   return (
     <>
       <Banner />

@@ -2,7 +2,7 @@ import { Container } from "@/styles/global";
 import { Title } from "@/components";
 import { ProductsCard } from "./components";
 
-export const ProductsTemplate = () => {
+export const Products = () => {
   return (
     <>
       <Container>
