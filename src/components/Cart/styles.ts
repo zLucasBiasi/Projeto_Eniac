@@ -52,10 +52,24 @@ export const Informations = styled.p`
 export const Button = styled.button`
   ${({ theme }) => css`
     padding: 0.3rem 0.6rem;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     font-size: 1.4rem;
     border: none;
     background-color: ${theme.colors.red};
     color: ${theme.colors.white};
+  `}
+`;
+
+export const Close = styled.button`
+  ${({ theme }) => css`
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    border: none;
+    background-color: ${theme.colors.red};
+    color: ${theme.colors.white};
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
   `}
 `;

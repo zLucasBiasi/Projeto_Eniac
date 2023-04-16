@@ -13,7 +13,7 @@ export const Cart = ({
   const { list, remove } = useRemoveItem();
   return (
     <S.Cart active={active}>
-      <button onClick={() => setCartActive(false)}>x</button>
+      <S.Close onClick={() => setCartActive(false)}>x</S.Close>
       {list.length < 1 ? (
         <p>Não há nada aqui ainda!</p>
       ) : (
