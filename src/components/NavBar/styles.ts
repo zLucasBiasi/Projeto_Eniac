@@ -32,7 +32,7 @@ export const Logo = styled(Image)`
 export const MenuMobile = styled.div<MenuMobileProps>`
   ${({ theme, active }) => css`
     opacity: ${active ? "1" : "0"};
-    display: flex;
+    display: ${active ? "flex" : "none"};
     flex-direction: column;
     align-items: center;
     justify-content: space-between;

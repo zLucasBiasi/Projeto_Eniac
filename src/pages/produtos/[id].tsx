@@ -3,7 +3,7 @@ import { Container } from "@/styles/global";
 import { products } from "@/templates/Products/components/ProductsCard/products";
 import { GetServerSideProps } from "next";
 
-import * as S from "../../templates/DinamicStyleProduct/styles";
+import * as S from "./styles";
 import { useContext } from "react";
 import { NewItemCartContext } from "@/context/cart";
 
