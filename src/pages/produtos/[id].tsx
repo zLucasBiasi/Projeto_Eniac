@@ -3,12 +3,23 @@ import { Container } from "@/styles/global";
 import { products } from "@/templates/Products/components/ProductsCard/products";
 import { GetServerSideProps } from "next";
 
-import * as S from "./styles";
+import * as S from "../../templates/DinamicStyleProduct/styles";
+import { useContext } from "react";
+import { NewItemCartContext } from "@/context/cart";
 
-const buyProducts = ({ products, message }: any) => {
+const BuyProducts = ({ products, message }: any) => {
+  const { list, setList } = useContext(NewItemCartContext);
+
+  console.log(list);
   if (message) {
     return <h1>{message}</h1>;
   }
+
+  const AddProduct = () => {
+    alert("produto adicionado!");
+    setList((prev) => [...prev, ...products]);
+  };
+
   return (
     <Container>
       <S.Wrapper>
@@ -17,14 +28,14 @@ const buyProducts = ({ products, message }: any) => {
           <S.Name>{products[0].name}</S.Name>
           <p>{products[0].description}</p>
           <S.Value>R$:{products[0].value}</S.Value>
-          <Button>COLOCAR NO CARRINHO</Button>
+          <Button onClick={AddProduct}>COLOCAR NO CARRINHO</Button>
         </S.WrapperInformation>
       </S.Wrapper>
     </Container>
   );
 };
 
-export default buyProducts;
+export default BuyProducts;
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { id }: any = ctx.params;

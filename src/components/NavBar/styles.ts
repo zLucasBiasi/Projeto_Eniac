@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import styled, { css } from "styled-components";
 
+type MenuMobileProps = {
+  active: boolean;
+};
+
 export const Header = styled.header`
   ${({ theme }) => css`
     width: 100%;
@@ -25,8 +29,8 @@ export const Logo = styled(Image)`
   }
 `;
 
-export const MenuMobile = styled.div`
-  ${({ theme, active }: { active: boolean }) => css`
+export const MenuMobile = styled.div<MenuMobileProps>`
+  ${({ theme, active }) => css`
     opacity: ${active ? "1" : "0"};
     display: flex;
     flex-direction: column;
@@ -90,4 +94,10 @@ export const LinkStyle = styled(Link)`
       color: ${theme.colors.white};
     }
   `}
+`;
+
+export const ListIcons = styled.li`
+  display: flex;
+  gap: 3rem;
+  cursor: pointer;
 `;

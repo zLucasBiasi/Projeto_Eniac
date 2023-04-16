@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "@/styles/theme";
 import { GlobalStyles } from "@/styles/global";
 import { Navbar, ButtonTop, Footer } from "@/components";
+import { NewItemCartProvider } from "@/context/cart";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,14 +14,16 @@ const poppins = Poppins({
 });
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <main className={poppins.className}>
-        <Navbar />
-        <Component {...pageProps} />
-        <GlobalStyles />
-        <ButtonTop />
-        <Footer />
-      </main>
-    </ThemeProvider>
+    <NewItemCartProvider>
+      <ThemeProvider theme={theme}>
+        <main className={poppins.className}>
+          <Navbar />
+          <Component {...pageProps} />
+          <GlobalStyles />
+          <ButtonTop />
+          <Footer />
+        </main>
+      </ThemeProvider>
+    </NewItemCartProvider>
   );
 }

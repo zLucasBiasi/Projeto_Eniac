@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.section`
@@ -33,7 +34,6 @@ export const Name = styled.p`
 export const Value = styled.span`
   ${({ theme }) => css`
     font-size: 1.8rem;
-
     font-weight: 600;
     color: ${theme.colors.purple};
   `}
@@ -41,7 +41,8 @@ export const Value = styled.span`
 
 export const ImageStyle = styled(Image)`
   width: 100%;
-  height: 30rem;
+  min-height: 30rem;
+  height: auto;
   object-fit: cover;
   cursor: pointer;
   border-radius: 1rem;

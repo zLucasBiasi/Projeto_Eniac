@@ -6,3 +6,4 @@ export { BestSellers } from "./BestSellers";
 export { Button } from "./Button";
 export { ButtonTop } from "./ButtonTop";
 export { Footer } from "./Footer";
+export { Cart } from "./Cart";

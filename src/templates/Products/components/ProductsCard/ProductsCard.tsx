@@ -11,15 +11,13 @@ export const ProductsCard = () => {
     <Container>
       <S.Wrapper>
         {products.map((item) => (
-          <S.CardProduct key={item.id}>
-            <S.Name>{item.name}</S.Name>
-            <div>
-              <Link href={"produtos/" + item.id}>
-                <S.ImageStyle src={item.image} alt={item.alt} />
-              </Link>
+          <Link href={"produtos/" + item.id} key={item.id}>
+            <S.CardProduct>
+              <S.Name>{item.name}</S.Name>
+              <S.ImageStyle src={item.image} alt={item.alt} />
               <S.Value>R$: {item.value}</S.Value>
-            </div>
-          </S.CardProduct>
+            </S.CardProduct>
+          </Link>
         ))}
       </S.Wrapper>
     </Container>
