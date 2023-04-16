@@ -2,6 +2,7 @@ import * as S from "./styles";
 
 import { Button } from "../Button";
 import { useRemoveItem } from "./hooks/removeItem";
+import { sendOrder } from "./function/sendOrder";
 
 export const Cart = ({
   active,
@@ -11,6 +12,7 @@ export const Cart = ({
   setCartActive: (arg: boolean) => void;
 }) => {
   const { list, remove } = useRemoveItem();
+
   return (
     <S.Cart active={active}>
       <S.Close onClick={() => setCartActive(false)}>x</S.Close>
@@ -30,7 +32,17 @@ export const Cart = ({
           </S.Wrapper>
         ))
       )}
-      <Button>REALIZAR PEDIDO</Button>
+      <Button
+        onClick={() => {
+          if (list.length !== 0) {
+            sendOrder(list);
+          } else {
+            alert("coloque algo no carrinho antes");
+          }
+        }}
+      >
+        REALIZAR PEDIDO
+      </Button>
     </S.Cart>
   );
 };

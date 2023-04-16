@@ -66,7 +66,7 @@ export const Close = styled.button`
     border-radius: 0.3rem;
     font-size: 1.4rem;
     border: none;
-    background-color: ${theme.colors.red};
+    background-color: ${theme.colors.green};
     color: ${theme.colors.white};
     position: absolute;
     right: 0;
